@@ -483,33 +483,70 @@
           </svg>
         </button>
 
-        <form class="js-speaker-form">
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" autofocus />
+        <form class="form js-speaker-form">
+          <div class="form-tit">
+            <h3>Оставьте свои данные, мы вам перезвоним</h3>
+          </div>
 
-          <label for="telephone">Телефон</label>
-          <input type="tel" name="telephone" id="telephone" />
+          <div class="form-all-data">
+            <div class="form-field">
+              <label class="form-label" for="name">Имя</label>
+              <div class="form-data-border">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  autofocus
+                />
+              </div>
+            </div>
 
-          <label for="mail">Почта</label>
-          <input type="mail" name="mail" id="mail" />
+            <div class="form-field">
+              <label class="form-label" for="telephone">Телефон</label>
+              <div class="form-data-border">
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                />
+              </div>
+            </div>
 
-          <label for="add-comment">Комментарий</label>
+            <div class="form-field">
+              <label class="form-label" for="mail">Почта</label>
+              <div class="form-data-border">
+                <input class="form-input" type="mail" name="mail" id="mail" />
+              </div>
+            </div>
 
-          <textarea
-            name="add-comment"
-            id="add-comment"
-            cols="30"
-            rows="10"
-            placeholder="Введите текст"
-          ></textarea>
+            <div class="form-field">
+              <label class="form-label" for="add-comment">Комментарий</label>
+              <div class="form-data-border">
+                <textarea
+                  class="form-text-input"
+                  name="add-comment"
+                  id="add-comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+            </div>
+          </div>
 
-          <input type="checkbox" name="agreement" id="agreement" />
-          <label for="agreement"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a>
-          </label>
+          <div class="form-checkbox">
+            <input type="checkbox" name="agreement" id="agreement" />
+            <label for="agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="agreement-link">Условия договора</a>
+            </label>
+          </div>
 
-          <button type="submit">Отправить</button>
+          <div class="form-button">
+            <button type="submit">Отправить</button>
+          </div>
         </form>
       </div>
     </div>
