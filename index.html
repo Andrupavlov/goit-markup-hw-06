@@ -476,7 +476,12 @@
         <div class="form-subscribe">
           <h4 class="form-subscribe-tit">Подпишитесь на рассылку</h4>
           <div class="form-subscribe-box">
-            <input class="form-subscribe-input" type="mail" name="mail" />
+            <input
+              class="form-subscribe-input"
+              type="mail"
+              name="mail"
+              placeholder="E-mail"
+            />
             <button type="submit" class="form-subscribe-button">
               <p class="subscribe-button-text">Подписаться</p>
               <svg class="form-subscribe-logo">
@@ -511,6 +516,7 @@
                   name="name"
                   id="name"
                   autofocus
+                  required
                 />
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-form-name"></use>
@@ -526,6 +532,7 @@
                   type="tel"
                   name="telephone"
                   id="telephone"
+                  required
                 />
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-form-phone"></use>
@@ -536,7 +543,13 @@
             <div class="form-field">
               <label class="form-label" for="mail">Почта</label>
               <div class="form-text-rec">
-                <input class="form-input" type="mail" name="mail" id="mail" />
+                <input
+                  class="form-input"
+                  type="mail"
+                  name="mail"
+                  id="mail"
+                  required
+                />
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-form-mail"></use>
                 </svg>
