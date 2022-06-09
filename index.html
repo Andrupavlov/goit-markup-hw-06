@@ -569,13 +569,23 @@
             </div>
           </div>
 
-          <div class="form-checkbox">
-            <input type="checkbox" name="agreement" id="agreement" />
-            <label for="agreement"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="agreement-link">Условия договора</a>
-            </label>
-          </div>
+          <label for="agreement" class="form-checkbox">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+            />
+            <span class="check-logo">
+              <svg class="check-svg">
+                <use href="./images/icons.svg#icon-check_on"></use>
+              </svg>
+            </span>
+
+            Соглашаюсь с рассылкой и принимаю
+
+            <a href="" class="agreement-link">Условия договора</a>
+          </label>
 
           <div class="form-button">
             <button type="submit">Отправить</button>
