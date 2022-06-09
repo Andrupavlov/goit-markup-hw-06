@@ -984,7 +984,7 @@ p {
     border-radius: 4px;
 }
 
-
+/* Чек бокс --------------------------------------------------------------- */
 .form-checkbox {
     display: flex;
     justify-content: center;
@@ -1003,27 +1003,39 @@ p {
     height: 15px;
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
-}
 
-/* .checkbox:checked+.check-logo {
-    background-color: #188CE8;
-} */
+    margin-right: 7px;
+}
 
 .agreement-link {
     color: var(--ascent-color);
+    margin-left: 4px;
 }
 
-.check-logo .check-svg {
-    display: none;
-}
-
-.checkbox:checked+.check-logo .check-svg {
+.check-svg {
     display: inline-block;
     width: 16px;
     height: 15px;
+
+    opacity: 0;
+}
+
+.checkbox:checked+.check-logo .check-svg {
+    opacity: 1;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked+.check-logo {
+    border: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+/* Кнопка отправки формы ----------------------------------------------------------- */
 .form-button {
     display: flex;
     justify-content: center;
