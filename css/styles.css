@@ -850,12 +850,16 @@ p {
 }
 
 /* Оформление формы модалкт ------------------------------------------------------------ */
+.modal {
+    padding: 40px;
+}
+
 .form-tit {
     display: flex;
     justify-content: center;
 }
 
-.form-tit h3 {
+.form-tit p {
     display: block;
 
     font-weight: 700;
@@ -864,16 +868,12 @@ p {
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-top: 40px;
     margin-bottom: 12px;
 
     color: var(--title-text-color);
 }
 
 .form-all-data {
-    margin-left: 40px;
-    margin-right: 40px;
-
     margin-bottom: 20px;
 }
 
@@ -988,6 +988,8 @@ p {
 .form-checkbox {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 24px;
     margin-bottom: 30px;
 }
 
